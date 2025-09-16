@@ -1,2 +1,3 @@
-# desenvolvimento-Front-End-2s-2025
-Aulas de desemvolvimento front end
+No desenvolvimento do trabalho, utilizamos Flexbox principalmente no header, header p e footer. Isso porque o Flexbox facilita o uso de linhas e colunas, simplifica o alinhamento entre os elementos e permite centralizar conteúdos de maneira prática. Além disso, sua implementação é simples e bastante eficiente para esse tipo de estrutura.
+
+Já na organização do main, img e form, optamos pelo uso do Grid. Ele possibilita organizar os elementos de forma mais intuitiva, permitindo tanto estruturas simples quanto layouts mais complexos. Dessa forma, conseguimos criar uma disposição clara e funcional, aproveitando a flexibilidade que o Grid oferece para o desenvolvimento de páginas modernas e responsivas.
