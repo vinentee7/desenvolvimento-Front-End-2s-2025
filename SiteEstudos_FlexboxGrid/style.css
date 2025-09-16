@@ -68,7 +68,7 @@ main {
 }
 
 main h2 {
-    color: var(--dark-blue);
+    color: #2C3E50;
     margin-bottom: 15px;
     border-bottom: 2px solid #87CEEB;
     padding-bottom: 5px;
