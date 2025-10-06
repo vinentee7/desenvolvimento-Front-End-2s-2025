@@ -1,0 +1,594 @@
+/* --- GERAL --- */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: s#f8f8f8;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* --- CABEÇALHO --- */
+.main-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px 30px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 25px;
+}
+
+.search-bar {
+    display: flex;
+    flex-grow: 1;
+    margin: 0 30px;
+    max-width: 400px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.header-nav a:hover {
+    color: #f60;
+}
+
+.header-nav .login {
+    background-color: #f8f8f8;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #e0e0e0;
+}
+
+.btn-subscribe {
+    background-color: #008037;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+.btn-subscribe:hover {
+    color: white;
+    background-color: #00662c;
+}
+
+/* --- NAVEGAÇÃO DE GÊNEROS --- */
+.genres-nav {
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.genres-nav a {
+    display: inline-block;
+    padding: 15px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+    border-bottom: 3px solid transparent;
+}
+
+.genres-nav a.active, .genres-nav a:hover {
+    color: #f60;
+    border-bottom: 3px solid #f60;
+}
+
+/* --- SEÇÃO HERO --- */
+.hero-content img{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 3px;
+}
+
+/* --- SEÇÃO MAIS ACESSADOS --- */
+.top-charts {
+    margin-top: 40px;
+}
+
+.top-charts h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.charts-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.song-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    grid-column: span 1;
+    grid-row: span 5;
+}
+
+.song-list:nth-child(1) { grid-column: 1; }
+.song-list:nth-child(2) { grid-column: 2; }
+.song-list:nth-child(3) { grid-column: 3; }
+
+.song-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    counter-increment: song-counter;
+}
+
+.song-list li:hover{
+    -webkit-text-fill-color:#f60;;
+}
+
+.song-list li::before {
+    content: counter(song-counter);
+    font-weight: bold;
+    font-size: 16px;
+    color: #999;
+    margin-right: 15px;
+    min-width: 20px;
+    text-align: right;
+}
+
+.song-list li a {
+    font-weight: bold;
+    display: grid;
+}
+
+.song-list li a:hover {
+    text-decoration: underline;
+}
+
+.song-list span {
+    font-size: 12px;
+    color: #666;
+    display: grid;
+    grid-column: 3;
+
+}
+
+.highlight-cards {
+    grid-column: 4;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.card-info h3 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+}
+
+.card-info p {
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+}
+
+/* --- ESTILOS GERAIS PARA AS NOVAS SEÇÕES --- */
+.section-header, .section-header-filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.section-header h2, .section-header-filters h2, .blog h2 {
+    font-size: 24px;
+    margin: 0;
+}
+.section-header p {
+    margin: 5px 0 0;
+    color: #666;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+}
+.btn-green {
+    background-color: #008037;
+    color: #fff;
+}
+.btn-green:hover {
+    background-color: #00662c;
+}
+.btn-outline {
+    border: 1px solid #ccc;
+    color: #333;
+    background-color: #fff;
+    width: 100%;
+    box-sizing: border-box; 
+}
+.btn-outline:hover {
+    background-color: #f8f8f8;
+}
+.btn-more {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #666;
+}
+.btn-more:hover {
+    background-color: #f0f0f0;
+}
+
+/* --- SEÇÃO DE CURSOS --- */
+.courses {
+    margin-top: 50px;
+}
+
+.courses-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; 
+    padding-bottom: 15px; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none;  
+    position: relative;
+}
+.courses-slider::-webkit-scrollbar { /* WebKit */
+    display: none;
+}
+
+.course-card {
+    flex: 0 0 220px; /* Não cresce, não encolhe, base de 220px */
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+}
+.course-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.course-card h3 {
+    margin: 0 0 5px;
+    font-size: 18px;
+}
+.course-card p {
+    margin: 0 0 15px;
+    font-size: 14px;
+    color: #666;
+}
+.arrow-next {
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-70%);
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #666;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+.slider-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+.dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 4px;
+}
+.dot.active {
+    background-color: #f60;
+}
+
+
+/* --- SEÇÃO DE VÍDEOS --- */
+.videos {
+    margin-top: 50px;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    color: #666;
+}
+.filters .filter-option {
+    padding: 8px 15px;
+    border-radius: 15px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+.filters .filter-option.active {
+    background-color: #333;
+    color: #fff;
+}
+.video-search {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+.video-search img {
+    height: 25px;
+    margin-right: 10px;
+}
+.video-search input {
+    border: none;
+    outline: none;
+    padding: 8px 0;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+.video-card {
+    font-size: 14px;
+}
+.video-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+.video-card h4 {
+    margin: 0 0 4px;
+    font-size: 1em; /* 14px */
+}
+.video-card p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9em; /* ~12.6px */
+}
+.video-card span {
+    color: #999;
+    font-size: 0.8em; /* ~11.2px */
+}
+
+
+/* --- SEÇÃO DO BLOG --- */
+.blog {
+    margin-top: 50px;
+}
+.blog h2 {
+    margin-bottom: 20px;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+.blog-post img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.blog-post p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* --- ESTILOS DO FOOTER --- */
+.main-footer {
+    background-color: #000000
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    
+}
+
+
+/* Colunas de Links */
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+.link-column h4 {
+    color: #ffffff;
+    font-size: 16px;
+    margin: 0 0 15px;
+}
+.link-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.link-column ul li {
+    margin-bottom: 10px;
+}
+.link-column ul a {
+    color: #999;
+}
+.link-column ul a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Divisores */
+.footer-divider {
+    border: none;
+    border-top: 1px solid #444;
+    margin: 30px 0;
+}
+
+/* Seção de Apps e Redes Sociais */
+.footer-apps-social, .footer-extra {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+.apps h4, .socials h4, .more-music h4, .languages h4 {
+    color: #ffffff;
+    font-size: 16px;
+    margin: 0 0 15px;
+}
+.app-buttons {
+    display: flex;
+    gap: 15px;
+}
+.app-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+.app-btn:hover {
+    background-color: #444;
+}
+.app-btn i {
+    font-size: 1.2em;
+}
+
+.social-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.social-btn {
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+}
+.social-btn i {
+    font-size: 1.1em;
+}
+.social-btn.youtube    { background-color: #ff0000; }
+.social-btn.instagram  { background-color: #de1cd1 }
+.social-btn.facebook   { background-color: #1877f2; }
+.social-btn.tiktok     { background-color: #000; }
+.social-btn.x          { background-color: #000; }
+.social-btn.blog-btn   { background-color: #f60; }
+
+
+/* Seção de Mais Música e Idiomas */
+.music-logos {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.music-logos img {
+    height: 20px;
+    filter: invert(75%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(100%) contrast(100%);
+}
+
+.language-buttons {
+    display: flex;
+    gap: 10px;
+}
+.lang-btn {
+    border: 1px solid #666;
+    color: #999;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.lang-btn.active, .lang-btn:hover {
+    background-color: #444;
+    color: #fff;
+    border-color: #888;
+}
+
+@media (max-width: 380px) {
+    body {
+        font-size: x-large;
+    }
+}
+@media (max-width: 768px) {
+    .hero-content img {
+        display: none;
+    }
+    body {
+        font-size: larger;
+    }
+}
+@media (max-width: 1024px) {
+    .song-list {
+        flex-wrap: wrap;
+    }
+
+    body {
+        font-size: medium;
+    }
+}
