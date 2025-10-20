@@ -1,4 +1,5 @@
 1. Tema e Escopo do Projeto
+   
   O que vamos fazer? Um site profissional e "vendável" para a Brotherhood Barbearia, localizada em Águas Claras.
 
   Qual o escopo? Não será apenas um "cartão de visitas" digital. O escopo é criar uma plataforma completa que inclui:
@@ -7,6 +8,7 @@
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   
 2. Objetivos, Público e Estrutura
+   
 Objetivo Principal: Automatizar a receita. O site deve permitir que o cliente agende e confirme um horário sozinho, 24 horas por dia, sem precisar de intervenção manual (telefone ou WhatsApp).
 
   Objetivo Secundário: Atrair novos clientes através de um bom posicionamento no Google para buscas locais (ex: "barbearia em Águas Claras").
@@ -20,6 +22,7 @@ Objetivo Principal: Automatizar a receita. O site deve permitir que o cliente ag
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 3. Potencial de Negócio (O Retorno do Investimento)
+   
 Este site não é um custo, é um investimento. O retorno esperado vem de três frentes:
 
   Economia de Tempo (Eficiência): O sistema de agendamento automático libera os barbeiros da tarefa de responder WhatsApp/telefone para marcar horários. Mais tempo focado no cliente, menos tempo no celular.
