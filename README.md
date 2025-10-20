@@ -5,6 +5,7 @@
   Apresentação profissional da marca e um sistema de agendamento online totalmente funcional.
 
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  
 2. Objetivos, Público e Estrutura
 Objetivo Principal: Automatizar a receita. O site deve permitir que o cliente agende e confirme um horário sozinho, 24 horas por dia, sem precisar de intervenção manual (telefone ou WhatsApp).
 
